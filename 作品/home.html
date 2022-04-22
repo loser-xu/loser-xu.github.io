@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+    <div class="title">
+        <script>
+            var Tname="基于Echarts的热门编程语言应用市场可视化分析";
+            var Tlen=Tname.length;
+            document.write("<div id='a' style='font-size:50px;'>"+Tname+"</div>");
+            var col=new Array("#FFCC00","#3333FF","#FFCC00","#FF0000","#FFCC00","#CC33FF");
+            var ic=0;
+            function Dcolor(){
+              var Strname="";
+              for (i=0;i<Tlen;++i){
+                var Strname=Strname+"<font color="+col[ic]+">"+Tname.substring(i,i+1)+"</font>";
+               ic=ic+1;
+               if (ic==col.length) ic=0;
+              }
+              a.innerHTML=Strname;
+              setTimeout("Dcolor()",600);
+            }
+            Dcolor();
+            </script>
+    </div>
+    
+    <div class="card">
+        <div class="photo"><img src="./image/view.jpg" alt=""></div>
+        <h1>来源</h1>
+        <h2>分析由来</h2>
+        <p>如何得出中国的热门编程语言，这些编程语言应用如何。</p>
+        <a href="./面板1/pagination1.html">了解更多</a>
+    </div>
+    <div class="card">
+        <div class="photo"><img src="./image/home.jpg" alt=""></div>
+        <h1>企业</h1>
+        <h2>需求分析</h2>
+        <p>企业的需求对应着求职者的求职方向，是良好就业环境的保障。</p>
+        <a href="./pagination2.html" >了解更多</a>
+    </div>
+    <div class="card">
+        <div class="photo"><img src="./image/home1.jpg" alt=""></div>
+        <h1>现状</h1>
+        <h2>招聘现状</h2>
+        <p>招聘市场的招聘情况能够为我们充分了解这个行业的现状。</p>
+        <a href="./pagination3.html">了解更多</a>
+    </div>
+    <div class="card">
+        <div class="photo"><img src="./image/home3.jpg" alt=""></div>
+        <h1>前景</h1>
+        <h2>前景分析</h2>
+        <p>行业前景是我们从事每一个行业都不可避免的话题，那么编程市场的前景又如何呢？</p>
+        <a href="./pagination4.html">了解更多</a>
+    </div>
+</body>
+
+</html>

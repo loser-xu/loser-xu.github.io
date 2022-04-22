@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>招聘分析</title>
+    <link rel="stylesheet" href="css/pagination3.css">
+    <style>
+        .aligncenter{
+            clear: both;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <!--头部的盒子-->
+    <header>
+        <h1>招聘分析</h1>
+        <div class="showTime">当前时间：2022年3月17日-23时17分14秒</div>
+        <button><a href="./home.html">首页</a></button>
+        <script>
+            var t = null;
+            t = setTimeout(time, 1000);//开始运行
+            function time() {
+                clearTimeout(t);//清除定时器
+                dt = new Date();
+                var y = dt.getFullYear();//获取年份
+                var mt = dt.getMonth() + 1;//获取月份返回（0-11）
+                var date = dt.getDate();//获取日
+                var h = dt.getHours();//获取时
+                var m = dt.getMinutes();//获取分
+                var s = dt.getSeconds();//获取秒
+                document.querySelector(".showTime").innerHTML = '当前时间：' + y + "年" + mt + "月" + date + "日" + "-" + h + "时" + m + "分" + s + "秒";
+                t = setTimeout(time, 1000); //设定定时器，循环运行     
+            }
+        </script>
+    </header>
+    <!-- 主体部分 -->
+    <section class="main">
+        <div class="one">
+            <div class="panel tree">
+                <h2>热门城市——岗位分布图</h2>
+                <div class="chart"></div>
+            </div>
+            <div class="panel wordcloud">
+                <h2>福利词云图</h2>
+                <div class="chart"></div>
+            </div>
+        </div>
+        <div class="two">
+            <div class="panel2 line">
+                <h2>岗位关系图</h2>
+                <div class="chart"></div>
+            </div>
+            <div class="panel2 pie">
+                <h2>学历分布图</h2>
+                <div class="chart"></div>
+            </div>
+            <div class="panel2 bar">
+                <h2>岗位数量Top10公司</h2>
+                <div class="chart"></div>
+            </div>
+        </div>
+        <div class="three">
+            <div class="text funnel">
+                <h2>平均薪资区间分布</h2>
+                <div class="chart"></div>
+            </div>
+            <div class="text">
+                <h2>延伸</h2>
+                <img src="./image/hn.jpg"  height="200" class="aligncenter">
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp海南自贸港的建设离不开各行各业的精英人才参与，且海南风景优美、
+                    气候宜人非常适合工作定居。习总书记在2022年亚洲博鳌论坛开幕式中也提到自贸港的建设。
+                    随着建设的加深需要的人才只会越来越多，对于我们每一个人来说意味着更多的机会。</p>
+            </div>
+        </div>
+        <script type="text/javascript"></script>
+        <script src="js/echarts.min.js"></script>
+        <script src="js/flexible.js"></script>
+        <script src="js/echarts-wordcloud.min.js"></script>
+        <script src="js/pagination3.js"></script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,674 @@
+@charset "utf-8";
+
+/********** 整体 **********/
+
+.w50 {
+    width: 50% !important;
+}
+
+.title {
+    font-size: 320px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "microsoft yahei", arial, sans-serif;
+    background: url('../img/bj.png');
+    background-color: #18248f;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -10vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 375px;
+    max-width: 1920px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/********** 布局 **********/
+
+:root {
+    --height: 64px;
+}
+
+.header {
+    position: relative;
+    height: 42px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 华文新魏;
+    src: url(../font/华文新魏.ttf);
+}
+
+.header-title {
+    margin: 0;
+    padding: 0;
+    line-height: var(--height);
+    text-align: center;
+    background: url("../img/head_bg.png");
+    background-size: contain;
+    background-position: 50%;
+    font-size: 30px;
+    font-weight: 400;
+    color: #a59de9;
+    font-family: '华文新魏';
+}
+
+.wrapper {
+    position: absolute;
+    top: var(--height);
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 10px 10px 0 10px;
+    min-height: 500px;
+    background: url("../img/eb71eeef39277e61bdd2740cadb5f86.png") no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 华文新魏;
+    src: url(../font/华文新魏.ttf);
+}
+
+.wrapper .title {
+    text-align: center;
+    font-family: 华文新魏;
+}
+
+.xpanel {
+    background-image: url(../img/wrapper.png);
+    overflow: hidden;
+}
+
+
+/********** Content **********/
+
+.content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    height: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.cot {
+    margin: 10px;
+    height: 10%;
+    width: 100%;
+}
+
+.col {
+    margin: 0px;
+    height: calc(100% - 15% - 15% - 45px)
+}
+
+.col-l {
+    -webkit-flex: 3.5;
+    -ms-flex: 3.5;
+    flex: 3;
+}
+
+.col-c {
+    -webkit-flex: 1.75;
+    -ms-flex: 1.75;
+    flex: 3;
+}
+
+.col-r {
+    -webkit-flex: 1.75;
+    -ms-flex: 1.75;
+    flex: 3;
+}
+
+@media (max-width:1919px) {
+    .content {
+        padding: 5px 0;
+    }
+}
+
+@media (max-width:1279px) {
+    .content {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .cot {
+        margin: 5px 0;
+    }
+    .col {
+        margin: 5px 0;
+    }
+    .col-l,
+    .col-c,
+    .col-r {
+        -webkit-flex: none;
+        -ms-flex: none;
+        flex: none;
+    }
+}
+
+.xpanel-wrapper {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.xpanel-wrapper {
+    height: 100%;
+}
+
+.xpanel-wrapper-10 {
+    height: 10%;
+    width: 100%;
+}
+
+.xpanel-wrapper-101 {
+    height: 10%;
+}
+
+
+/*.xpanel-wrapper-25 {
+    height: 25%;
+}*/
+
+.xpanel-wrapper-30 {
+    height: 30%;
+}
+
+.xpanel-wrapper-40 {
+    height: 40%;
+}
+
+.xpanel-wrapper-60 {
+    height: 70%;
+}
+
+.xpanel-wrapper-50 {
+    height: 50%;
+}
+
+.xpanel {
+    height: 100%;
+    min-height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+}
+
+.xpanel-l-t {
+    background-image: url("../img/9aed62f7f81a3cdd4fc11a9d1945755.png");
+}
+
+.xpanel-l-m {
+    background-image: url("../img/9aed62f7f81a3cdd4fc11a9d1945755.png");
+}
+
+.xpanel-l-b {
+    background-image: url("../img/9aed62f7f81a3cdd4fc11a9d1945755.png");
+}
+
+.xpanel-c-t {
+    background-image: url("../img/9aed62f7f81a3cdd4fc11a9d1945755.png");
+}
+
+.xpanel-c-m {
+    background-image: url("../img/9aed62f7f81a3cdd4fc11a9d1945755.png");
+}
+
+.xpanel-c-b {
+    background-image: url("../img/9aed62f7f81a3cdd4fc11a9d1945755.png");
+    ;
+}
+
+.xpanel-r-t {
+    background-image: url("../img/9aed62f7f81a3cdd4fc11a9d1945755.png");
+}
+
+.xpanel-r-m {
+    background-image: url("../img/9aed62f7f81a3cdd4fc11a9d1945755.png");
+}
+
+.xpanel-r-b {
+    background-image: url("../img/9aed62f7f81a3cdd4fc11a9d1945755.png");
+}
+
+@font-face {
+    font-family: 华文新魏;
+    src: url(../font/华文新魏.ttf);
+}
+
+.xpanel .title {
+    /* padding-left: 24px; */
+    height: 20px;
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 华文新魏;
+}
+
+@font-face {
+    font-family: 华文新魏;
+    src: url(../font/华文新魏.ttf);
+}
+
+.xpanel .title-long {
+    text-align: center;
+    font-size: 25px;
+    font-family: 华文新魏;
+}
+
+.fill-h {
+    height: 100% !important;
+    min-height: 100% !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-bg {
+    background: none !important;
+}
+
+.no-border {
+    border: 0 !important;
+}
+
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    border-color: rgb(198, 226, 43);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/*岗位数旋转*/
+
+.boxnav {
+    padding: 15px;
+}
+
+.yqlist>ul {
+    display: flex;
+    padding: 0;
+}
+
+.yqlist li {
+    width: calc(100%/3);
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.yqlist li span {
+    opacity: 6;
+    font-size: 14px;
+    color: #8e2bff;
+    /*font-family: 'DS-DIGIB';*/
+}
+
+@font-face {
+    font-family: DS-Digib;
+    src: url(../font/DS-DIGIB.TTF);
+}
+
+.yq {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 5px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-family: electronicFont;
+    color: #c6ff2b;
+    font-family: 'DS-DIGIB';
+}
+
+@font-face {
+    font-family: DS-Digib;
+    src: url(../font/DS-DIGIB.TTF);
+}
+
+.yq:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url(../img/img1.png) center center;
+    border-radius: 100px;
+    background-size: 100% 100%;
+    opacity: 1;
+    left: 0;
+    top: 0;
+    animation: myfirst2 15s infinite linear;
+}
+
+.yq:after {
+    position: absolute;
+    width: 86%;
+    background: url(../img/img2.png) center center;
+    border-radius: 100px;
+    background-size: 100% 100%;
+    opacity: 6;
+    height: 86%;
+    content: "";
+    left: 7%;
+    top: 7%;
+    animation: myfirst 15s infinite linear;
+}
+
+@keyframes myfirst {
+    to {
+        transform: rotate(-360deg)
+    }
+}
+
+@keyframes myfirst2 {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+
+/*框内切换*/
+
+.tab_header {
+    width: 100%;
+    /* height: .4rem; */
+    /*    border: 1px solid red;*/
+}
+
+.tab_header .selected {
+    background: rgb(153, 56, 233);
+}
+
+.tab_header ul {
+    display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.tab_header li {
+    /* float: left; */
+    width: 50%;
+    color: #ffffff;
+    text-align: center;
+    /*line-height: .4rem;*/
+    cursor: pointer;
+    list-style-type: none;
+    font-family: 'DS-DIGII';
+}
+
+@font-face {
+    font-family: DS-DIGII;
+    src: url(../font/DS-DIGII.TTF);
+}
+
+
+/*轮播*/
+
+.wraptit {
+    font-size: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.wrap li span {
+    display: inline-block;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.wrap ul {
+    padding-left: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.wraptit span {
+    display: inline-block;
+    font-size: 15px;
+    color: rgba(255, 255, 255, .6);
+}
+
+.wraptit {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+}
+
+.wrap li span:nth-child(1),
+.wraptit span:nth-child(1) {
+    width: 25%
+}
+
+.wrap li span:nth-child(2),
+.wraptit span:nth-child(2) {
+    width: 20%
+}
+
+.wrap li span:nth-child(3),
+.wraptit span:nth-child(3) {
+    width: 20%
+}
+
+.wrap li span:nth-child(4),
+.wraptit span:nth-child(4) {
+    width: 30%
+}
+
+.wrap {
+    height: 82%;
+    overflow: hidden;
+}
+
+.wrap li {
+    line-height: 50px;
+    height: 40px;
+}
+
+.wrap li p,
+.wraptit {
+    font-size: 0;
+}
+
+.wrap li span {
+    display: inline-block;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.wraptit span {
+    display: inline-block;
+    font-size: 13px;
+    color: rgba(255, 255, 255, .6);
+}
+
+.wraptit {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+}
+
+.wrap li span:nth-child(1),
+.wraptit span:nth-child(1) {
+    width: 30%
+}
+
+.wrap li span:nth-child(2),
+.wraptit span:nth-child(2) {
+    width: 20%
+}
+
+.wrap li span:nth-child(3),
+.wraptit span:nth-child(3) {
+    width: 20%
+}
+
+.wrap li span:nth-child(4),
+.wraptit span:nth-child(4) {
+    width: 30%
+}
+
+.str_wrap {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.str_move {
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: move;
+}
+
+.str_move_clone {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.str_vertical .str_move_clone {
+    left: 0;
+    top: 100%;
+}
+
+.str_down .str_move_clone {
+    left: 0;
+    bottom: 100%;
+}
+
+.str_vertical .str_move,
+.str_down .str_move {
+    white-space: normal;
+    width: 100%;
+}
+
+.str_static .str_move,
+.no_drag .str_move,
+.noStop .str_move {
+    cursor: inherit;
+}
+
+.str_wrap img {
+    max-width: none !important;
+}
+
+.navboxall {
+    height: calc(100% - 30px);
+}
+
+@keyframes loop {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -900px 0;
+    }
+}
+
+
+/*3D地图*/
+
+.earth {
+    background: url(../img/terra.jpg) repeat-x 0 0;
+    /* 背景图片在水平方向复制*/
+    border: 1px solid rgba(26, 18, 101, 0.3);
+    /*形成圆边效果，视觉效果更好，不用也行*/
+    border-radius: 450px;
+    /*使地球形成圆形效果*/
+    box-shadow: -8px 0 25px rgba(256, 256, 256, 0.3), -1px -2px 14px rgba(256, 256, 256, 0.5) inset;
+    /*形成圆形外面的模糊月晕效果*/
+    /*下面的属性可使地球位于浏览器窗口垂直水平居中国*/
+    height: 450px;
+    left: 23%;
+    margin: -225px 0 0 -225px;
+    position: absolute;
+    top: 30%;
+    width: 550px;
+    animation: loop 20s linear infinite;
+}
+
+.earth:before {
+    content: "";
+    border-radius: 225px;
+    box-shadow: -150px -6px 25px rgba(0, 0, 0, 0.7) inset;
+    /*形成弧形阴影*/
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 450px;
+    width: 550px;
+}
+
+
+/*跳转*/
+
+.xpanelr .zuo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 0.9375rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.25rem;
+}
+
+.wenben {
+    left: 40%;
+    top: 10px;
+}
+
+@font-face {
+    font-family: 华文新魏;
+    src: url(../font/华文新魏.ttf);
+}
+
+.wenben p {
+    text-align: center;
+    line-height: 15px;
+    font-size: 18px;
+    font-family: 华文新魏;
+    /*color: #c6ff2b;*/
+}

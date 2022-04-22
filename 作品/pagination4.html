@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前景</title>
+    <style>
+        div img{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        div span{
+            display: inline-block;
+            width: 0;
+            height: 100%;
+            vertical-align: middle;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/pagination4.css">
+</head>
+<body>
+    <!--头部的盒子-->
+    <header>
+        <h1>前景分析</h1>
+        <div class="showTime">当前时间：2022年3月17日-23时17分14秒</div>
+        <button><a href="./home.html" >首页</a></button>
+        <script>
+            var t = null;
+            t = setTimeout(time, 1000);//开始运行
+            function time() {
+                clearTimeout(t);//清除定时器
+                dt = new Date();
+                var y = dt.getFullYear();//获取年份
+                var mt = dt.getMonth() + 1;//获取月份返回（0-11）
+                var date = dt.getDate();//获取日
+                var h = dt.getHours();//获取时
+                var m = dt.getMinutes();//获取分
+                var s = dt.getSeconds();//获取秒
+                document.querySelector(".showTime").innerHTML = '当前时间：' + y + "年" + mt + "月" + date + "日" + "-" + h + "时" + m + "分" + s + "秒";
+                t = setTimeout(time, 1000); //设定定时器，循环运行     
+            }
+        </script>
+        <section class="main">
+            <div class="one">
+                 <div class="panel tree">
+                     <h2>Java开发方向</h2>
+                     <div class="chart"></div>
+                <div class="panel-footer"></div>
+                </div>
+                <div class="panel4 tree1">
+                    <h2>Python应用方向</h2>
+                    <div class="chart"></div>
+                
+                <div class="panel-footer"></div>
+                </div>
+            </div>
+            <div class="two">
+                <div class="panel2 pie">
+                    <h2>C语言在系统层面应用</h2>
+                    <div class="chart"></div>
+                </div>
+                <div class="panel3 bar">
+                    <h2>TIOBE编程排行榜热度排行</h2>
+                    <div class="chart"></div>
+                </div>
+            </div>
+            <script type="text/javascript"></script>
+        <script src="js/echarts.min.js"></script>
+        <script src="js/flexible.js"></script>
+        <script src="js/echarts-wordcloud.min.js"></script>
+        <script src="js/pagination4.js"></script>
+        </section>
+
+    </header>
+</body>
+</html>

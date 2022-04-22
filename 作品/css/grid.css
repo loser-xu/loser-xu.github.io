@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 声明字体*/
+@font-face {
+  font-family: 汉仪铸字超然体;
+  src: url(../fonts/汉仪铸字超然体.TTF);
+}
+body {
+  background: url(../image/true.png) no-repeat top center;
+  line-height: 1.15;
+}
+header {
+  position: relative;
+  height: 1.25rem;
+  background: url(../image/head_bg.png);
+  background-size: 100% 100%;
+}
+header h1 {
+  font-size: 0.475rem;
+  color: #ffd111;
+  text-align: center;
+  line-height: 1rem;
+  font-family: 汉仪铸字超然体;
+}
+header .showTime {
+  position: absolute;
+  right: 0.375rem;
+  top: 0;
+  line-height: 0.9375rem;
+  color: #51c4d3;
+  font-size: 0.25rem;
+  font-family: 汉仪铸字超然体;
+}
+header a {
+  position: absolute;
+  left: 0.375rem;
+  top: 0;
+  line-height: 0.9375rem;
+  color: black;
+  font-size: 0.25rem;
+  font-family: 汉仪铸字超然体;
+}
+.main {
+  display: flex;
+  min-width: 1024px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0.125rem 0.125rem 0;
+}
+.main .one {
+  flex: 3;
+}
+.main .one .panel1 {
+  position: relative;
+  height: 3.875rem;
+  padding: 0 0.1875rem 0.5rem;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+  margin-bottom: 0.1875rem;
+  background: url(../image/imgbg.png);
+  background-size: 100% 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.main .one .panel1 .chart {
+  height: 3rem;
+}
+.main .two {
+  flex: 3;
+}
+.main .three {
+  flex: 3;
+}

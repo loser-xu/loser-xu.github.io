@@ -1,0 +1,138 @@
+// css初始化
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 声明字体*/
+@font-face {
+  font-family: 华文新魏;
+  src: url(../fonts/华文新魏.ttf);
+}
+body {
+  background: url(../image/true.png) no-repeat top center;
+  line-height: 1.15;
+}
+
+header {
+  position: relative; //绝对定位
+  height:1rem;
+  background: url(../image/headBg.png);
+  background-size: 100% 100%;
+
+  h1 {
+    font-size: 0.4125rem;
+    color: #a59de9;
+    text-align: center;
+    line-height: 0.875rem;
+    font-family: 华文新魏;
+    
+  }
+
+  .showTime {
+    position: absolute;
+    right: 2%;
+    top: 35%;
+    line-height: 0.9375rem;
+    color: #51c4d3;
+    font-size: 15px;
+    font-family: 汉仪铸字超然体;
+  }
+
+  a {
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    text-align: center; 
+    line-height: 0.5rem;
+    color: #f9f4dc;
+    font-size: 15px;
+    font-family: 汉仪铸字超然体;
+    background-image: url(../image/choose-item.png);
+    background-size: 100% 100%;
+  }
+}
+.mainbox {
+    display: flex;
+    min-width: 1024px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0.125rem 0.125rem 0;
+    .one {
+      flex: 3;
+      .panel{
+        position: relative;
+        height: 3.875rem;
+        padding: 0 0.1875rem 0.5rem;
+        border: 1px solid rgba(25, 186, 139, 0.17);
+        margin-bottom: 0.1875rem;
+        background: url(../image/imgbg.png);
+        background-size: 100% 100%;
+
+    }
+    .chart {
+        height: 3rem;
+    }
+    }
+    .two {
+      flex: 3;
+      .panel2{
+        position: relative;
+        height: 5.9125rem;
+        padding: 0 0.1875rem 0.5rem;
+        border: 1px solid rgba(25, 186, 139, 0.17);
+        margin-bottom: 0.1875rem;
+        background: url(../image/beijing.png);
+        background-size: 100% 100%;
+        .chart {
+          height: 4.875rem;
+    }
+
+    }
+    }
+    .three{
+      flex: 3;
+      .panel3{
+        position: relative;
+        height: 3.875rem;
+        padding: 0 0.1875rem 0.5rem;
+        border: 1px solid rgba(25, 186, 139, 0.17);
+        margin-bottom: 0.1875rem;
+        background: url(../image/imgbg.png);
+        background-size: 100% 100%;
+    }
+
+    .chart {
+        height: 3rem;
+    }
+    }
+    h2 {
+      height: 0.6rem;
+      line-height: 0.6rem;
+      text-align: center; 
+      color: #fff;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    
+    
+    
+    
+    
+  
+}
+
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 42px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 80px !important;
+  }
+}
